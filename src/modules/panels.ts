@@ -3,7 +3,7 @@ import type {FileSystemAPI} from '@webcontainer/api';
 import type {ShellInstance} from '../hooks/useShell';
 import type {CollabInstance} from '../hooks/useCollab';
 
-export function openDock(grid: GridviewApi, api: React.MutableRefObject<DockviewApi | undefined>) {
+export function openDock(grid: GridviewApi, api: React.RefObject<DockviewApi | null>) {
   grid.addPanel({
     id: 'dock',
     component: 'dock',
@@ -11,7 +11,7 @@ export function openDock(grid: GridviewApi, api: React.MutableRefObject<Dockview
   });
 }
 
-export function openPanes(grid: GridviewApi, api: React.MutableRefObject<PaneviewApi | undefined>) {
+export function openPanes(grid: GridviewApi, api: React.RefObject<PaneviewApi | null>) {
   grid.addPanel({
     id: 'panes',
     component: 'panes',

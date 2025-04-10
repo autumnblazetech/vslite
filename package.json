@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "vslite",
-  "version": "1.2.0",
+  "name": "autumnblaze-vslite",
+  "version": "0.0.1",
   "description": "More than Monaco, less than VSCode.",
   "type": "module",
   "scripts": {
@@ -12,33 +12,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kat-tax/vslite.git"
+    "url": "https://github.com/autumnblazetech/vslite.git"
   },
   "dependencies": {
-    "@monaco-editor/react": "^4.5.1",
-    "@webcontainer/api": "^1.1.5",
-    "dockview": "^1.7.6",
-    "monaco-editor": "^0.39.0",
-    "monaco-editor-auto-typings": "^0.4.4",
-    "react": "^18.2.0",
-    "react-complex-tree": "^2.1.4",
-    "react-dom": "^18.2.0",
-    "xterm": "^5.1.0",
-    "xterm-addon-fit": "^0.7.0",
-    "y-monaco": "^0.1.4",
-    "y-webrtc": "^10.2.5",
-    "yjs": "^13.6.2"
-  },
-  "devDependencies": {
-    "@types/node": "^20.3.0",
-    "@types/react": "^18.2.11",
-    "@types/react-dom": "^18.2.4",
-    "@vitejs/plugin-react": "^4.0.0",
-    "@vitejs/plugin-react-swc": "^3.3.2",
-    "typescript": "^5.1.3",
-    "vite": "^4.3.9",
-    "vite-plugin-node-polyfills": "^0.9.0",
-    "vite-plugin-rewrite-all": "^1.0.1"
+    "@monaco-editor/react": "^4.7.0",
+    "@webcontainer/api": "^1.5.3",
+    "dockview": "^4.2.3",
+    "dockview-core": "^4.2.3",
+    "monaco-editor-auto-typings": "^0.4.6",
+    "react": "^19.1.0",
+    "react-complex-tree": "^2.6.0",
+    "react-dom": "^19.1.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0",
+    "y-monaco": "^0.1.6",
+    "y-webrtc": "^10.3.0",
+    "yjs": "^13.6.24"
   },
   "prettier": {
     "semi": true,
@@ -47,5 +36,21 @@
     "trailingComma": "all",
     "arrowParens": "avoid",
     "printWidth": 200
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react-swc": "^3.8.1",
+    "eslint": "^9.24.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1",
+    "vite": "^6.2.6"
   }
 }

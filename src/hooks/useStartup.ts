@@ -6,13 +6,13 @@ import {useShell} from '../hooks/useShell';
 import {openFolder} from '../modules/webcontainer';
 import * as panels from '../modules/panels';
 
-import type {MutableRefObject} from 'react';
+import type {RefObject} from 'react';
 import type {DockviewApi, GridviewApi, PaneviewApi} from 'dockview';
 
 export function useStartup(
-  grid: MutableRefObject<GridviewApi | undefined>,
-  dock: MutableRefObject<DockviewApi | undefined>,
-  panes: MutableRefObject<PaneviewApi | undefined>,
+  grid: RefObject<GridviewApi | null>,
+  dock: RefObject<DockviewApi | null>,
+  panes: RefObject<PaneviewApi | null>,
 ) {
   const shell = useShell();
   const monaco = useMonaco();

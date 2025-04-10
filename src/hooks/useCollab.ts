@@ -9,7 +9,7 @@ import type * as YJS from '../modules/yjs';
 const debug = Debug('useCollab');
 
 export type CollabInstance = {
-  session: React.MutableRefObject<YJS.Session | null>,
+  session: React.RefObject<YJS.Session | null>,
   syncEditor: (editor: Editor) => void,
 };
 
